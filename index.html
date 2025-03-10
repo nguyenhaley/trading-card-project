@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content="Welcome Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Welcome Page </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio autoplay type="audio/mpeg">
+        <source src="">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h1> Welcome </h1>
+    <section id="getName">
+        <p>Input your name to get started</p>
+        <form id="name-form">
+            <input type="text" id="name-input" placeholder="Type your name" required>
+            <button id=startButton type="button"> Start </button>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById("startButton").onclick = function () {
+          window.location.href = "binder.html";
+        };
+    </script>
+
+
+</body>
+</html>
